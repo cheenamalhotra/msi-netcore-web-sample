@@ -1,0 +1,16 @@
+﻿@model MSIAuthenticator;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-left">
+        <h1 class="display-4">Welcome to Sample App by Cheena!</h1>
+        <p>This sample application tests MSI Authentication to Azure Database from an "Identity" enabled Azure App Service.
+        The application code acquires Access Token by making HttpWebRequest call to target Azure Services,
+        and then creates SqlConnection instance with the access token acquired.</p>
+        <p>Response is below:</p>
+        <br />
+        <pre>@Model.AuthResponse</pre>
+        <br/>
+        <p>Source Code can be located at <a href="https://github.com/cheenamalhotra/msi-netcore-web-sample">cheenamalhotra/msi-netcore-web-sample</a></p>
+    </div>
